@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        div.container {
+            width: 600px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #ccc;
+        }
+        .mensagem {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">Início</a> | <a href="about">Sobre</a>
+    </header>
+{{ content | safe }}
+</body>
+</html>
